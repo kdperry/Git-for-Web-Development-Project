@@ -1,0 +1,130 @@
+https://codepen.io/kdperry90/pen/MWyQKwa?editors=1100
+
+1. What is Semantic HTML? 
+	Semantic HTML is meaningful mark-up. It is organizing work into understandble and concise flow (separating paragraphs, sections, page breaks, etc.)
+
+2. What is HTML used for? 
+	It is hypertext mark-up, and it is used to organize text, links, and objects. It's a simple means to break up blocks of text, using tags like paragrahs, section, divx, etc.
+
+3. What is an attribute and where do we put it? 
+	An attribute is more data that is supplied to an element. It provides additional details, like if an element is a title, or a class, etc.
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+	An h1 tag is the most important header tag. It is the biggest title on the page. The h1 tag can be used as many times as you like, but it is more common and cohesive to only used the tag once per page
+
+5. Name two tags that have required attributes
+	The two tags with required attributes are images (img) and anchor tags (a).
+ 
+6. What do we put in the head of our HTML document? 
+	The head is used for "invisible information",that doesn't need to be displayed on the page, such as the page title.
+ 
+7. What is an id? 
+	An id is an attribute, that can only be assigned to one element per page. It is a unique identifier for that element. 
+
+8. What elements can I add an id to? 
+	You can add an id to elements like the header, or a specific paragraph.
+
+9. How many times can I use the same id on a page? 
+	You can only use the same id once per page.
+
+10. What is a class? 
+	A class is an attribute that can be assigned to more than one element. 
+
+11. What elements can I add a class to?
+	Classes can be added to divs, sections, paragraphs, etc.
+ 
+ 12. How many times can I use the same class on a page? 
+	Classes can be used multiple times on the same page.
+
+ 13. How do I get my link to open in a new tab?
+	You used anchor tags to get a link to open in a new tab.
+
+ 14. What is the alt attribute in the image tag used for? 
+	The alt attribute in the image tag is used to specify alternative information for images. 
+
+15. How do I reference an id?
+	To reference an id you use a hashtag, followed by the id. (#MyFooter)
+
+16. What is the difference between a section and a div
+	A div is a generic container for text and content. It is specifically for division, of block elememts. A section is a more specific. It is used for semantically breaking a page into groups, usually based on themes or connections. 
+
+17. What is CSS used for? 
+	CSS is the paint job, whereas HTML is just the markup. It is used to style a page, using backgrounds, colors, fonts, margins, animations, etc. 
+
+18. How to we select an element? Example - every h2 on the page
+	To select an element, you can use an asterisk, which is a universal selector (*h2 selects all the h2s on a page). To select one element, just type the html tag (p selects all paragraps, h1 selects header 1, etc.)
+    
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	The difference is that a class can be used for multiple elements, but an id can be only used for one element. I might use an id for my header, since it usually only appears once on the page. I would use classes for paragraphs.
+
+20. How do we select classes in CSS?
+	To select classes in CSS, you have to use a period, followed by the name is the class (.classname).
+
+21. How do we select a p element with a single class of “human””?
+	To select, we enter p.human
+
+22. What is a parent child selector? When would this be useful? 
+	A parent child selector is used to select the parent (an element like a div or a paragraph) and the child (elements embedded into the parent elements, like an image). This would be helpful when styling a page, that has multiple sections, with images or links assigned to the each section. You can style the section once, without having to style the individual images, etc. 
+    
+23. How do you select all links within a div with the class of sidebar?
+	*div.sidebar a
+
+24. What is a pseudo selector?
+	A pseudo selector is used to describe an element in a special state. 
+
+25. What do we use the change the spacing between lines?
+	line-height
+
+26. What do we use to change the spacing between letters?
+	letter-spacing
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	text-transform 
+
+28. How do I add a 1px border around my div that is dotted and black?
+	div {
+		border: 1px dotted black;}
+
+29. How do I select everything on the page?
+	* (Universal Selector)
+ 
+30. How do I write a comment in CSS?
+	/* comment */
+
+31. How do I find out what file I am in, when I am using the command line? 
+	$git status
+	
+32. Using the command line - how do I see a list of files/folders in my current folder?
+	$ls-al
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	$rm, this makes the file harder to recover, because it does not move it to the recyling bin, instead it completely erases it.
+
+34. Why should I use version control? 
+	You should use version control because it is constanly updated. As new things are added, the content changes and collaboration is much easier. It also allows you to track changes over time, and revert to previous versionS if need be. 
+
+35. How often should I commit to github?
+	At least a couple of times per hour, or more specifically as changes are made.
+
+36. What is the command we would use to push our repo up to github? 
+	git push
+
+37. Walk me through Lambda's git flow. 
+	Fork, Clone, Add Collaborators, Branch, Add, Commit, Push, Pull Request, Merge (This step is for TLs only)
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+	Inline elements don't create a new line (span), block elements do (paragraph)
+
+2. What happens when an element is positioned absolutely? 
+	It does not exist within the normal realms of positioning. It is anchored by it's closest relative,but if one doesn't exist, then it is free floating (Scrolls with the page). This can cause overlapping, etc.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+	 Use margins and padding. 
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	Paragraph, headers, and lists are block by default. Span and break are inline elements. Div is an inline-block element
+
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+	The box level means that all HTML is considered a box. It has 4 sides: Width, Height, Content, and Padding. We make the elements respects the confines by assigning it a pixel value. 
